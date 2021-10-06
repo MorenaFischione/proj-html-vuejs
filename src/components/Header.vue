@@ -9,36 +9,23 @@
                 </div>
                 <div class="col-9">
                     <ul class="d-flex justify-content-end">
-                        <li>
-                            <a class="active" href="#">Home</a>
+                        <li v-for="(link, index) in links" :key="index">
+                            <a :class="{ active : link.current}" href="">{{link.text}} <span >{{link.new}}</span></a>         
                         </li>
                         <li>
-                            <a href="#">Services</a>
-                        </li>
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                        <li>
-                            <a href="#">Videos</a>
-                        </li>
-                        <li>
-                            <a href="#">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#">Store New</a>
-                        </li>
-                        <li>
-                            <a href="">
+                            <a href="#">
                                 <button type="button" class="btn btn-primary">Schedule a Workout</button>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#">
                                 <i class="fas fa-shopping-cart"></i>
                             </a>
                         </li>
                          <li>
-                            <i class="fas fa-search"></i>
+                            <a href="#">
+                                <i class="fas fa-search"></i>
+                            </a>
                         </li>
                     </ul>
 
@@ -53,6 +40,48 @@
 export default {
     name: "Header",
 
+    data: function () {
+        return {
+            links: [
+                {
+                    text: "Home",
+                    new: "",
+                    url: "#home",
+                    current: true,
+                },
+                {
+                    text: "Services",
+                    new: "",
+                    url: "#services",
+                    current: false,
+                },
+                {
+                    text: "About",
+                    new: "",
+                    url: "#about",
+                    current: false,
+                },
+                {
+                    text: "Videos",
+                    new: "",
+                    url: "#videos",
+                    current: false,
+                },
+                {
+                    text: "Blog",
+                    new: "",
+                    url: "#blog",
+                    current: false,
+                },
+                {
+                    text: "Store",
+                    new: "new",
+                    url: "#store",
+                    current: false,
+                },
+            ],
+        }   
+    }
 }
 </script>
 
@@ -87,20 +116,25 @@ export default {
             font-family: $main-font;
             font-size: 1.5rem;
 
-            
-          
-            .fas{
-                color: grey;
-            }
-
             button {
                 padding: 16px;
                 border-radius: 34px;
                 font-size: 1.2rem;
                 font-weight: bolder;
             }
-        
+
+            span {
+                background-color: $accent-color;
+                font-size: 1.4rem;
+                border-radius: 2px;
+            }
         }
+
+        .active {
+            color: $active-color;
+        }
+
+    
     }
 }
 
