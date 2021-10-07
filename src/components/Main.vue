@@ -66,6 +66,19 @@ export default {
 <style lang="scss">
 @import "../style/variables.scss";
 
+.my_container-img {
+        width: 100px;
+        height: 50px;
+
+        img {
+        filter: invert(98%) sepia(21%) saturate(4983%) hue-rotate(353deg) brightness(103%) contrast(106%);
+        width: 50%;
+        height: auto;
+        background-position: center;
+        }
+
+    }
+
 .jambotron {
     width: 100%;
     height: 1000px;
@@ -110,18 +123,6 @@ export default {
             .my_contain-left {
                 height: 100%;
             
-                .my_container-img {
-                    width: 100px;
-                    height: 50px;
-
-                    img {
-                    filter: invert(98%) sepia(21%) saturate(4983%) hue-rotate(353deg) brightness(103%) contrast(106%);
-                    width: 50%;
-                    height: auto;
-                    background-position: center;
-                    }
-
-                }
 
                 button {
                         padding: 16px;
@@ -204,18 +205,18 @@ export default {
         }
 
 
-        .my_container-img {
-                    width: 100%;
-                    height: 50px;
+        // .my_container-img {
+        //             width: 100%;
+        //             height: 50px;
 
-                    img {
-                    filter: invert(98%) sepia(21%) saturate(4983%) hue-rotate(353deg) brightness(103%) contrast(106%);
-                    width: 5%;
-                    height: auto;
-                    background-position: center;
-                    }
+        //             img {
+        //             filter: invert(98%) sepia(21%) saturate(4983%) hue-rotate(353deg) brightness(103%) contrast(106%);
+        //             width: 5%;
+        //             height: auto;
+        //             background-position: center;
+        //             }
 
-                }  
+        //         }  
                 
         .my_img-avatar {
             border-radius: 50%;
