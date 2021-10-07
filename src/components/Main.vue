@@ -18,27 +18,39 @@
                     </div>
                 </div>
                 <div class="row d-flex ">
-                    <div class="col-4 my_card">
-                        <img src="../assets/images/box1-2x.jpg" alt=""> 
+                    <div class="col-4">
+                        <div class="my_card-1">
+                            <div class="my_container-img text-center">
+                                <img src="../assets/images/zigzag.png" alt="immagine zig-zag">
+                            </div>
+                            <h3>Crossfit workout</h3>
+                            <h5>Push your limits</h5>
+                        </div>
                     </div>
-                    <div class="col-4 my_card ">
-                        <img src="../assets/images/service6-2x.jpg" alt=""> 
+                    <div class="col-4">
+                        <div class="my_card-2"></div>
                     </div>
-                    <div class="col-4 my_card ">
-                        <img src="../assets/images/box3-2x.jpg" alt=""> 
+                    <div class="col-4">
+                        <div class="my_card-3"></div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="avatar">
-            <div class="container-fluid my_container my_description">
-                
-                <div class="row">
+        <section class="my_blog">
+            <div class="container-fluid my_container">   
+                <div class="row justify-content-center align-items-end my_contain-text">
                     <div class="col-10">
                         <h2>"How you respond ti the challenge in the second half will determine what you  become after the game, whether you  are  a winner or a loser."</h2>
+                        <div class="my_container-img text-center">
+                            <img src="../assets/images/zigzag.png" alt="immagine zig-zag">
+                        </div>
+                        <div class="my_avatar text-center p-5">
+                            <img class="my_img-avatar" src="../assets/images/avatar-1-2x.jpg" alt="immagine avatar blog">
+                            <span class="my_name-avatar">Brad Johnson</span>
+                            <span class="my_city-avatar" >Las Vegas</span>
+                        </div>
                     </div>
-                </div>
-                
+                </div>     
             </div>
         </section>
     </div>
@@ -56,23 +68,44 @@ export default {
 
 .jambotron {
     width: 100%;
-    height: 900px;
+    height: 1000px;
     background-image: url("../assets/images/slider82x-scaled.jpg");
     
 
     .my_container {
             width: 80%;
             height: 100%;
+            bottom: 100px;
 
-            .my_card {
-        height: 400px;
-        
-        img {
-            width: 100%;
-            border-radius: 5px 5px 50px 5px;
-            filter: opacity(90%);
-        }
-    }
+            .my_card-1 {
+                background-image: url("../assets/images/box1-2x.jpg");
+                background-position: center;
+                background-size: cover; 
+                border-radius: 5px 5px 50px 5px;
+                filter: opacity(90%);
+                height: 500px;
+
+            }
+
+            .my_card-2 {
+                background-image: url("../assets/images/service6-2x.jpg");
+                background-position: center;
+                background-size: cover; 
+                border-radius: 5px 5px 50px 5px;
+                filter: opacity(90%);
+                height: 500px;
+
+            }
+
+            .my_card-3 {
+                background-image: url("../assets/images/box1-2x.jpg");
+                background-position: center;
+                background-size: cover; 
+                border-radius: 5px 5px 50px 5px;
+                filter: opacity(90%);
+                height: 500px;
+
+            }
 
             .my_contain-left {
                 height: 100%;
@@ -148,14 +181,62 @@ export default {
     }      
 }     
 
-.avatar {
+.my_blog {
     width: 100%;
-    height: 1000px;
+    height: 1200px;
     background-image: linear-gradient(to bottom right, blue 0%, #a03483 50%, rgb(175, 5, 5) 100%);
+    padding: 200px;
 
     .my_container {
         width: 80%;
         height: 100%;
+
+    
+        .my_contain-text {
+            height: 100%;
+        }
+
+        h2 {
+            color: $text-white;
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+
+        .my_container-img {
+                    width: 100%;
+                    height: 50px;
+
+                    img {
+                    filter: invert(98%) sepia(21%) saturate(4983%) hue-rotate(353deg) brightness(103%) contrast(106%);
+                    width: 5%;
+                    height: auto;
+                    background-position: center;
+                    }
+
+                }  
+                
+        .my_img-avatar {
+            border-radius: 50%;
+            object-fit: contain;
+            object-position: center;
+        }
+
+        .my_name-avatar {
+            color: $text-white; 
+            font-size: 1.5rem;
+            padding:10px;
+            font-weight: bolder;
+        }
+
+        .my_city-avatar {
+            color: $paragraph-color; 
+            font-size: 1.5rem;
+            padding: 10px;
+            font-weight: bolder;    
+        }
+        
     }
 
 
