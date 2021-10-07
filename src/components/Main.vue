@@ -1,7 +1,7 @@
 <template>
     <div class="main">
         <section class="jambotron">
-            <div class="container-fluid my_container">
+            <div class="container-fluid my_container position-relative">
                 <div class="row align-items-center my_contain-left">
                     <div class="col-10 p-3 ">
                         <h3>Certified fitness professional</h3>
@@ -17,10 +17,6 @@
                         <a href="#"> <i class="fas fa-play"></i></a>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="avatar">
-            <div class="container-fluid my_container my_description">
                 <div class="row d-flex ">
                     <div class="col-4 my_card">
                         <img src="../assets/images/box1-2x.jpg" alt=""> 
@@ -32,6 +28,11 @@
                         <img src="../assets/images/box3-2x.jpg" alt=""> 
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="avatar">
+            <div class="container-fluid my_container my_description">
+                
                 <div class="row">
                     <div class="col-10">
                         <h2>"How you respond ti the challenge in the second half will determine what you  become after the game, whether you  are  a winner or a loser."</h2>
@@ -62,6 +63,16 @@ export default {
     .my_container {
             width: 80%;
             height: 100%;
+
+            .my_card {
+        height: 400px;
+        
+        img {
+            width: 100%;
+            border-radius: 5px 5px 50px 5px;
+            filter: opacity(90%);
+        }
+    }
 
             .my_contain-left {
                 height: 100%;
@@ -147,15 +158,7 @@ export default {
         height: 100%;
     }
 
-    .my_card {
-        height: 400px;
-        
-        img {
-            width: 100%;
-            border-radius: 5px 5px 50px 5px;
-            filter: opacity(90%);
-        }
-    }
+
 
     
 }
