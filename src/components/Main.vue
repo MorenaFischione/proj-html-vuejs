@@ -1,22 +1,46 @@
 <template>
-    <section class="jambotron">
-        <div class="container-fluid my_container">
-            <div class="row align-items-center my_contain-left">
-                <div class="col-10 p-3 ">
-                    <h3>Certified fitness professional</h3>
-                    <h1>Take control of your health</h1>
-                    <div class="my_container-img">
-                        <img src="../assets/images/zigzag.png" alt="immagine zig-zag">
+    <div class="main">
+        <section class="jambotron">
+            <div class="container-fluid my_container">
+                <div class="row align-items-center my_contain-left">
+                    <div class="col-10 p-3 ">
+                        <h3>Certified fitness professional</h3>
+                        <h1>Take control of your health</h1>
+                        <div class="my_container-img">
+                            <img src="../assets/images/zigzag.png" alt="immagine zig-zag">
+                        </div>
+                        <p>Curabitur non nulla sit amet nisl tempus convallis quis ac  lectus dolor sit amet.</p>
+                        <a href="#"><button type="button" class="btn btn-primary me-4"><i class="fas fa-play"></i>Visit my you tube  channel</button></a>
+                        <a href="#"><button type="button" class="btn my_btn">Buy Avada today <i class="fas fa-arrow-right"></i></button></a>
                     </div>
-                    <p>Curabitur non nulla sit amet nisl tempus convallis quis ac  lectus dolor sit amet.</p>
-                    <a href="#"><button type="button" class="btn btn-primary"><i class="fas fa-play"></i>Visit my you tube  channel</button></a>
-                </div>
-                <div class="col-2 my_contain-right">
-                    <a href="#"> <i class="fas fa-play"></i></a>
+                    <div class="col-2 my_contain-right">
+                        <a href="#"> <i class="fas fa-play"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section class="avatar">
+            <div class="container-fluid my_container my_description">
+                <div class="row d-flex ">
+                    <div class="col-4 my_card">
+                        <img src="../assets/images/box1-2x.jpg" alt=""> 
+                    </div>
+                    <div class="col-4 my_card ">
+                        <img src="../assets/images/service6-2x.jpg" alt=""> 
+                    </div>
+                    <div class="col-4 my_card ">
+                        <img src="../assets/images/box3-2x.jpg" alt=""> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+                        <h2>"How you respond ti the challenge in the second half will determine what you  become after the game, whether you  are  a winner or a loser."</h2>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </div>
 </template>
 
 <script>
@@ -30,9 +54,10 @@ export default {
 @import "../style/variables.scss";
 
 .jambotron {
-    
+    width: 100%;
     height: 900px;
     background-image: url("../assets/images/slider82x-scaled.jpg");
+    
 
     .my_container {
             width: 80%;
@@ -59,17 +84,28 @@ export default {
                         border-radius: 34px;
                         font-size: 1.2rem;
                         font-weight: bolder;
+                        font-family: $secondary-font;
 
                         .fa-play {
                             color: $color-buttom;
                             font-size: .5rem;
                             padding: 5px;
                             margin-right: 10px;
-                            background-color: white;
+                            background-color: $text-white;
                             border-radius: 5px;
                             width: 25px;
                         }
                     }
+
+                .my_btn {
+                    background-color: black;
+                    border: 1px solid $paragraph-color;
+                    color: $text-white;
+                    padding-right: 35px;
+                    padding-left: 35px;
+                    font-family: $secondary-font;
+
+                }
                 
                 h3 {
                     color: $color-red;
@@ -97,12 +133,32 @@ export default {
                         padding: 44px;
                         border-radius: 50%;
                     }
-                }
-                
-        }
+                }          
+    }      
+}     
 
+.avatar {
+    width: 100%;
+    height: 1000px;
+    background-image: linear-gradient(to bottom right, blue 0%, #a03483 50%, rgb(175, 5, 5) 100%);
+
+    .my_container {
+        width: 80%;
+        height: 100%;
+    }
+
+    .my_card {
+        height: 400px;
         
-    }       
+        img {
+            width: 100%;
+            border-radius: 5px 5px 50px 5px;
+            filter: opacity(90%);
+        }
+    }
+
+    
+}
 
 
 </style>
