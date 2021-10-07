@@ -90,7 +90,7 @@ export default {
 
 
 .my_navbar {
-    background-color: $background-color;
+    background-color: $background-color-black;
 
     .my_container {
         width: 80%;
@@ -131,7 +131,7 @@ export default {
         }
 
         .active {
-            color: $active-color;
+            color: $color-buttom;
         }
 
     
