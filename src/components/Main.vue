@@ -19,19 +19,37 @@
                 </div>
                 <div class="row d-flex ">
                     <div class="col-4">
-                        <div class="my_card-1">
-                            <div class="my_container-img text-center">
-                                <img src="../assets/images/zigzag.png" alt="immagine zig-zag">
+                        <div class="my_card-1 d-flex">
+                            <div class="my_text-card align-self-end">
+                                <div class="my_container-img text-center ">
+                                    <img     src="../assets/images/zigzag.png" alt="immagine zig-zag">
+                                </div>
+                                <h3 class="ps-4">Crossfit workout</h3>
+                                <h5 class="ps-4 pb-2">Push your limits</h5>
                             </div>
-                            <h3>Crossfit workout</h3>
-                            <h5>Push your limits</h5>
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="my_card-2"></div>
+                        <div class="my_card-2 d-flex">
+                            <div class="my_text-card align-self-end">
+                                <div class="my_container-img text-center ">
+                                    <img src="../assets/images/zigzag.png" alt="immagine zig-zag">
+                                </div>
+                                <h3 class="ps-4">New gym apparel</h3>
+                                <h5 class="ps-4 pb-2">Look good, feel good</h5>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-4">
-                        <div class="my_card-3"></div>
+                        <div class="my_card-3 d-flex">
+                            <div class="my_text-card align-self-end">
+                                <div class="my_container-img text-center ">
+                                    <img src="../assets/images/zigzag.png" alt="immagine zig-zag">
+                                </div>
+                                <h3 class="ps-4">Team traning</h3>
+                                <h5 class="ps-4 pb-2">Find a partner</h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -95,9 +113,8 @@ export default {
                 background-position: center;
                 background-size: cover; 
                 border-radius: 5px 5px 50px 5px;
-                filter: opacity(90%);
+                filter: brightness(60%);
                 height: 500px;
-
             }
 
             .my_card-2 {
@@ -105,19 +122,33 @@ export default {
                 background-position: center;
                 background-size: cover; 
                 border-radius: 5px 5px 50px 5px;
-                filter: opacity(90%);
+                filter: brightness(50%);
                 height: 500px;
 
             }
 
             .my_card-3 {
-                background-image: url("../assets/images/box1-2x.jpg");
+                background-image: url("../assets/images/box3-2x.jpg");
                 background-position: center;
                 background-size: cover; 
                 border-radius: 5px 5px 50px 5px;
-                filter: opacity(90%);
+                filter: brightness(50%);
                 height: 500px;
 
+            }
+
+            .my_text-card {
+                h3 {
+                    color: $text-white;
+                    font-size: 2.2rem;
+                    font-weight: bolder;
+                }
+
+                h5 {
+                    color: $accent-color;
+                    font-size: 1.7rem;
+                    font-weight: bolder;
+                }
             }
 
             .my_contain-left {
@@ -204,19 +235,6 @@ export default {
             text-align: center;
         }
 
-
-        // .my_container-img {
-        //             width: 100%;
-        //             height: 50px;
-
-        //             img {
-        //             filter: invert(98%) sepia(21%) saturate(4983%) hue-rotate(353deg) brightness(103%) contrast(106%);
-        //             width: 5%;
-        //             height: auto;
-        //             background-position: center;
-        //             }
-
-        //         }  
                 
         .my_img-avatar {
             border-radius: 50%;
