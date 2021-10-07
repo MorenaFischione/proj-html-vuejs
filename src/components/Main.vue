@@ -21,7 +21,7 @@
                     <div class="col-4">
                         <div class="my_card-1 d-flex">
                             <div class="my_text-card align-self-end">
-                                <div class="my_container-img text-center ">
+                                <div class="my_container-img ps-4">
                                     <img     src="../assets/images/zigzag.png" alt="immagine zig-zag">
                                 </div>
                                 <h3 class="ps-4">Crossfit workout</h3>
@@ -32,7 +32,7 @@
                     <div class="col-4">
                         <div class="my_card-2 d-flex">
                             <div class="my_text-card align-self-end">
-                                <div class="my_container-img text-center ">
+                                <div class="my_container-img ps-4">
                                     <img src="../assets/images/zigzag.png" alt="immagine zig-zag">
                                 </div>
                                 <h3 class="ps-4">New gym apparel</h3>
@@ -43,7 +43,7 @@
                     <div class="col-4">
                         <div class="my_card-3 d-flex">
                             <div class="my_text-card align-self-end">
-                                <div class="my_container-img text-center ">
+                                <div class="my_container-img ps-4">
                                     <img src="../assets/images/zigzag.png" alt="immagine zig-zag">
                                 </div>
                                 <h3 class="ps-4">Team traning</h3>
@@ -71,6 +71,31 @@
                 </div>     
             </div>
         </section>
+        <section class="my_youtube">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6 position-relative">
+                        <div class="my_fitness-img position-absolute text-center">
+                            <img src="../assets/images/service15-2x.jpg" alt="">
+                            <div class="col-2 my_contain-right">
+                                <a href="#"> <i class="fas fa-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <h3>Tune up your workouts</h3>
+                        <h1>The best health &amp; fitness  advice online</h1>
+                        <div>
+                            <img src="../assets/images/unnamed.jpg" alt="">
+                        </div>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </div>
 </template>
 
@@ -85,12 +110,12 @@ export default {
 @import "../style/variables.scss";
 
 .my_container-img {
-        width: 100px;
-        height: 50px;
+        width: 100%;
+        
 
         img {
         filter: invert(98%) sepia(21%) saturate(4983%) hue-rotate(353deg) brightness(103%) contrast(106%);
-        width: 50%;
+        width: 10%;
         height: auto;
         background-position: center;
         }
@@ -109,31 +134,41 @@ export default {
             bottom: 100px;
 
             .my_card-1 {
-                background-image: url("../assets/images/box1-2x.jpg");
                 background-position: center;
                 background-size: cover; 
                 border-radius: 5px 5px 50px 5px;
                 filter: brightness(60%);
                 height: 500px;
+
+
+                background: rgba(0, 0, 0, .65) url("../assets/images/box1-2x.jpg");
+                background-blend-mode: darken;
+
             }
 
             .my_card-2 {
-                background-image: url("../assets/images/service6-2x.jpg");
+                
                 background-position: center;
                 background-size: cover; 
                 border-radius: 5px 5px 50px 5px;
                 filter: brightness(50%);
                 height: 500px;
+
+                background: rgba(0, 0, 0, .65) url("../assets/images/service6-2x.jpg");
+                background-blend-mode: darken;
 
             }
 
             .my_card-3 {
-                background-image: url("../assets/images/box3-2x.jpg");
+                
                 background-position: center;
                 background-size: cover; 
                 border-radius: 5px 5px 50px 5px;
                 filter: brightness(50%);
                 height: 500px;
+
+                background: rgba(0, 0, 0, .65) url("../assets/images/box3-2x.jpg");
+                background-blend-mode: darken;
 
             }
 
@@ -257,11 +292,29 @@ export default {
         }
         
     }
-
-
-
     
 }
 
+.my_fitness-img {
+    width: 100%;
+    padding-left: 0;
+    top: -100px;
+    
+     
+    img {
+        width: 100%;
+        border-radius: 5px 5px 70px 5px;
+    }
+
+    .my_contain-right {
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%); 
+        background-color: white;
+        padding: 40px 50px 40px 40px;
+        border-radius: 50%;
+        width: 20px;
+    }
+}
 
 </style>
