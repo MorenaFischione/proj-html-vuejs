@@ -7,7 +7,7 @@
                         <h3>Certified fitness professional</h3>
                         <h1>Take control of your health</h1>
                         <div class="my_container-img">
-                            <img src="../assets/images/zigzag.png" alt="immagine zig-zag">
+                            <img class="my_img-zig" src="../assets/images/zigzag.png" alt="immagine zig-zag">
                         </div>
                         <p>Curabitur non nulla sit amet nisl tempus convallis quis ac  lectus dolor sit amet.</p>
                         <a href="#"><button type="button" class="btn btn-primary me-4"><i class="fas fa-play"></i>Visit my you tube  channel</button></a>
@@ -20,34 +20,49 @@
                 <div class="row d-flex ">
                     <div class="col-4">
                         <div class="my_card-1 d-flex">
-                            <div class="my_text-card align-self-end">
-                                <div class="my_container-img ps-4">
-                                    <img     src="../assets/images/zigzag.png" alt="immagine zig-zag">
-                                </div>
-                                <h3 class="ps-4">Crossfit workout</h3>
-                                <h5 class="ps-4 pb-2">Push your limits</h5>
+                            <div class="align-self-end">
+                                <div class="pickgradient">
+                                    <img src="../assets/images/service6-2x.jpg" alt="ginnasta a riposo">
+                                    <div class="my_text-card ">
+                                        <div class="my_container-img ps-4">
+                                            <img class="my_img-zig" src="../assets/images/zigzag.png" alt="immagine zig-zag">
+                                        </div>
+                                        <h3 class="ps-4">Crossfit workout</h3>
+                                        <h5 class="ps-4 pb-2">Push your limits</h5>
+                                    </div>
+                                </div>  
                             </div>
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="my_card-2 d-flex">
-                            <div class="my_text-card align-self-end">
-                                <div class="my_container-img ps-4">
-                                    <img src="../assets/images/zigzag.png" alt="immagine zig-zag">
-                                </div>
-                                <h3 class="ps-4">New gym apparel</h3>
-                                <h5 class="ps-4 pb-2">Look good, feel good</h5>
+                        <div class="my_card-1 d-flex">
+                            <div class="align-self-end">
+                                <div class="pickgradient">
+                                    <img src="../assets/images/box1-2x.jpg" alt="abbigliamento sportivo">
+                                    <div class="my_text-card ">
+                                        <div class="my_container-img ps-4">
+                                            <img class="my_img-zig" src="../assets/images/zigzag.png" alt="immagine zig-zag">
+                                        </div>
+                                        <h3 class="ps-4">Crossfit workout</h3>
+                                        <h5 class="ps-4 pb-2">Push your limits</h5>
+                                    </div>
+                                </div>  
                             </div>
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="my_card-3 d-flex">
-                            <div class="my_text-card align-self-end">
-                                <div class="my_container-img ps-4">
-                                    <img src="../assets/images/zigzag.png" alt="immagine zig-zag">
-                                </div>
-                                <h3 class="ps-4">Team traning</h3>
-                                <h5 class="ps-4 pb-2">Find a partner</h5>
+                        <div class="my_card-1 d-flex">
+                            <div class="align-self-end">
+                                <div class="pickgradient">
+                                    <img src="../assets/images/box3-2x.jpg" alt="esercizi con palla pesi">
+                                    <div class="my_text-card ">
+                                        <div class="my_container-img ps-4">
+                                            <img class="my_img-zig" src="../assets/images/zigzag.png" alt="immagine zig-zag">
+                                        </div>
+                                        <h3 class="ps-4">Crossfit workout</h3>
+                                        <h5 class="ps-4 pb-2">Push your limits</h5>
+                                    </div>
+                                </div>  
                             </div>
                         </div>
                     </div>
@@ -60,7 +75,7 @@
                     <div class="col-10">
                         <h2>"How you respond ti the challenge in the second half will determine what you  become after the game, whether you  are  a winner or a loser."</h2>
                         <div class="my_container-img text-center">
-                            <img src="../assets/images/zigzag.png" alt="immagine zig-zag">
+                            <img class="my_img-zig" src="../assets/images/zigzag.png" alt="immagine zig-zag">
                         </div>
                         <div class="my_avatar text-center p-5">
                             <img class="my_img-avatar" src="../assets/images/avatar-1-2x.jpg" alt="immagine avatar blog">
@@ -77,7 +92,7 @@
                     <div class="col-6 position-relative">
                         <div class="my_fitness-img position-absolute text-center">
                             <img src="../assets/images/service15-2x.jpg" alt="">
-                            <div class="col-2 my_contain-right">
+                            <div class="col-2 my_contain-right position-absolute">
                                 <a href="#"> <i class="fas fa-play"></i></a>
                             </div>
                         </div>
@@ -88,9 +103,6 @@
                         <div>
                             <img src="../assets/images/unnamed.jpg" alt="">
                         </div>
-                        
-                        
-                        
                     </div>
                 </div>
             </div>
@@ -110,12 +122,11 @@ export default {
 @import "../style/variables.scss";
 
 .my_container-img {
-        width: 100%;
+        width: 100px;
         
-
-        img {
+        .my_img-zig {
         filter: invert(98%) sepia(21%) saturate(4983%) hue-rotate(353deg) brightness(103%) contrast(106%);
-        width: 10%;
+        width: 10px;
         height: auto;
         background-position: center;
         }
@@ -133,44 +144,67 @@ export default {
             height: 100%;
             bottom: 100px;
 
-            .my_card-1 {
-                background-position: center;
-                background-size: cover; 
+            .my_text-card {
+                content:'';
+                position:absolute;
+                left:0; top: 260px;
+                width:100%; height:100%;
+                display:inline-block;
+                }
+
+
+            .pickgradient{
+                position:relative;
+                display:inline-block;
+                }
+
+            .pickgradient:after {
+                content:'';
+                position:absolute;
+                left:0; top:0;
+                width:100%; height:100%;
+                display:inline-block;
+                background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+                background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
                 border-radius: 5px 5px 50px 5px;
-                filter: brightness(60%);
-                height: 500px;
+                }
 
+            img{
+                display:block;
+                width:100%;
+                border-radius: 5px 5px 50px 5px;
+                }
 
-                background: rgba(0, 0, 0, .65) url("../assets/images/box1-2x.jpg");
-                background-blend-mode: darken;
-
-            }
-
-            .my_card-2 {
+            // .my_card-2 {
                 
-                background-position: center;
-                background-size: cover; 
-                border-radius: 5px 5px 50px 5px;
-                filter: brightness(50%);
-                height: 500px;
+            //     background-position: center;
+            //     background-size: cover; 
+            //     border-radius: 5px 5px 50px 5px;
+            //     filter: brightness(50%);
+            //     height: 500px;
 
-                background: rgba(0, 0, 0, .65) url("../assets/images/service6-2x.jpg");
-                background-blend-mode: darken;
+            //     background: rgba(0, 0, 0, .65) url("../assets/images/service6-2x.jpg");
+            //     background-blend-mode: darken;
 
-            }
+            // }
 
-            .my_card-3 {
+            // .my_card-3 {
                 
-                background-position: center;
-                background-size: cover; 
-                border-radius: 5px 5px 50px 5px;
-                filter: brightness(50%);
-                height: 500px;
+            //     background-position: center;
+            //     background-size: cover; 
+            //     border-radius: 5px 5px 50px 5px;
+            //     filter: brightness(50%);
+            //     height: 500px;
 
-                background: rgba(0, 0, 0, .65) url("../assets/images/box3-2x.jpg");
-                background-blend-mode: darken;
+            //     background: rgba(0, 0, 0, .65) url("../assets/images/box3-2x.jpg");
+            //     background-blend-mode: darken;
 
-            }
+            // }
 
             .my_text-card {
                 h3 {
