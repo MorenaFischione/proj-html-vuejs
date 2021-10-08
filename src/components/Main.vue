@@ -85,7 +85,7 @@
                     <div class="col-10">
                         <h2>"How you respond ti the challenge in the second half will determine what you  become after the game, whether you  are  a winner or a loser."</h2>
                         <div class="my_container-img text-center">
-                            <img class="my_img-zig" src="../assets/images/zigzag.png" alt="immagine zig-zag">
+                            <img class="my_img-zig my_img-zigzag" src="../assets/images/zigzag.png" alt="immagine zig-zag">
                         </div>
                         <div class="my_avatar text-center p-5">
                             <img class="my_img-avatar" src="../assets/images/avatar-1-2x.jpg" alt="immagine avatar blog">
@@ -124,15 +124,53 @@
                             </div>
                         </div>
                         <p>Arcu eu facilisi ut quisque placerat  nunc habitat. Magna semper mauris, venenatis, leo integer sit  pallentsque.</p>
-                        <button class="btn btn-danger my_bottone"><i class="fas fa-play"></i>Visit my you tube  channel</button>
-                        
-                        
-                        
-                        
+                        <button class="btn btn-danger my_bottone"><i class="fas fa-play"></i>Visit my you tube  channel</button>  
                     </div>
                 </div>
             </div>
-
+        </section>
+        <!-- SECTION PLAYLIST -->
+        <section class="my_playlist">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="my_playlist-title">Featured playlist</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="my_container-img-card position-relative text-center ">
+                            <img class="my_img-card " src="../assets/images/video2-2x.jpg" alt="donna che fa pesi">
+                            <div class="col-2 my_contain-play position-absolute">
+                                <a href="#"> <i class="fas fa-play"></i></a>
+                            </div>
+                            <h5 class="pt-5">Thighs &amp; gluse workout</h5>
+                            <h6>Increase your  mobility</h6>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="my_container-img-card position-relative text-center">
+                            <img class="my_img-card" src="../assets/images/video7-2x.jpg" alt="donna che fa pesi">
+                            <div class="col-2 my_contain-play position-absolute">
+                                <a href="#"> <i class="fas fa-play"></i></a>
+                            </div>
+                            <h5 class="pt-5">Lift firm &amp; perk up</h5>
+                            <h6>Feel your again</h6>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="my_container-img-card position-relative text-center">
+                            <img class="my_img-card" src="../assets/images/video9-2x.jpg" alt="donna che fa pesi">
+                            <div class="col-2 my_contain-play position-absolute">
+                                <a href="#"> <i class="fas fa-play"></i></a>
+                            </div>
+                            <h5 class="pt-5">Slim &amp; trim  your waist</h5>
+                            <h6>Shed those extra pounds</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    
         </section>
     </div>
 </template>
@@ -161,10 +199,25 @@ export default {
 
     }
 
+// SCSS JAMBOTRON
+
 .jambotron {
     width: 100%;
     height: 1000px;
+    position: relative;
     background-image: url("../assets/images/slider82x-scaled.jpg");
+    z-index: 1;
+
+    .jambotron::after {
+        content : "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(40% 50%, rgba(0,0,0,0.3), rgba(255,255,255,0.5));
+    }
     
 
     .my_container {
@@ -287,7 +340,8 @@ export default {
                 }          
     }      
 }     
-
+ 
+//  SCSS SECTION BLOG
 .my_blog {
     width: 100%;
     height: 1200px;
@@ -298,6 +352,13 @@ export default {
         width: 80%;
         height: 100%;
 
+        .my_container-img {
+            width: 100%;
+        }
+
+        .my_img-zigzag {
+            width: 40px;
+        }
     
         .my_contain-text {
             height: 100%;
@@ -309,6 +370,7 @@ export default {
             font-weight: bold;
             text-align: center;
         }
+        
 
                 
         .my_img-avatar {
@@ -334,6 +396,7 @@ export default {
     }
     
 }
+
 
 .my_fitness-img {
     width: 100%;
@@ -407,4 +470,41 @@ export default {
             width: 25px;
         }
     }
+
+.my_playlist-title {
+    padding : 150px 30px 30px 30px;
+}
+
+.my_container-img-card {
+    width: 100%;
+    padding:30px;
+    border-radius: 35px;
+
+
+
+    .my_img-card {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px 5px 50px 5px;
+    object-fit: cover;
+    object-position: center;
+    }
+
+    .my_contain-play {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -95%);
+    background-color: white;
+    padding: 15px 28px 15px 15px;
+    border-radius: 50%;
+    width: 20px;
+    }
+
+    h6 {
+        color: $color-buttom;
+    }
+}
+
+
+
 </style>

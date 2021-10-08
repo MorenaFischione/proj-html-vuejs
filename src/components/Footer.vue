@@ -30,12 +30,13 @@
             <h5 class="my_color-text"> {{ mobile }} </h5>
             <h5 class="my_color-text"> {{ email }} </h5>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
 
+           <div class="col-12 text-center border-top">
+            <p class="p-5 my_copyright">Copyright 2012 - 2020 | Avada theme the <strong class="my_accent-text">ThemeFusion</strong> all right reserved | Powered by <strong class="my_accent-text">Wordpress</strong></p> 
           </div>
         </div>
+       
+        
       </div>
   </section>
 </template>
@@ -85,7 +86,7 @@ export default {
 
 .my_footer {
   background-color: $background-color-black;
-  height: 800px;
+  height: 680px;
 
   .my_container-footer {
     height: 100%;
@@ -133,6 +134,16 @@ export default {
 
   h5 {
     color: $primary-color;
+  }
+
+  .my_copyright {
+    color: $primary-color;
+    font-size: 1.1rem;
+    font-family: $secondary-font;
+
+    .my_accent-text {
+      color: $text-white;
+    }
   }
 
 }
