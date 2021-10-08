@@ -359,7 +359,7 @@ export default {
 }
 
 .my_area-right {
-    height: 1000px;
+    height: 680px;
 }
 
 .my_img-addominali {
@@ -367,6 +367,7 @@ export default {
     background-position: center;
     background-size: cover;
     top: -120px;
+    height: 800px;
 }
 
 .my_contain-logo-youtube {
