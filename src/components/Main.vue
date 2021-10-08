@@ -1,6 +1,9 @@
 <template>
+
+    <!-- AREA JAMBOTRON CON AGGIUNTA DELLE CARD IN POSITION ABSOLUTE PER POSIZIONARLE  -->
     <div class="main">
         <section class="jambotron">
+            <!-- INSERIMENTO DI IMMAGINE COME BACKGROUND E POSIZIONAMENTO DELLE SCRITTE DI SINISTRA IN ABOSLUTE -->
             <div class="container-fluid my_container position-relative">
                 <div class="row align-items-center my_contain-left">
                     <div class="col-10 p-3 ">
@@ -17,7 +20,9 @@
                         <a href="#"> <i class="fas fa-play"></i></a>
                     </div>
                 </div>
+                <!-- POSIZIONAMENTO DELLE CARD - BOX -->
                 <div class="row d-flex ">
+                    <!-- CARD 1 -->
                     <div class="col-4">
                         <div class="my_card-1 d-flex">
                             <div class="align-self-end">
@@ -34,6 +39,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- CARD 2-->
                     <div class="col-4">
                         <div class="my_card-1 d-flex">
                             <div class="align-self-end">
@@ -50,6 +56,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- CARD 3-->
                     <div class="col-4">
                         <div class="my_card-1 d-flex">
                             <div class="align-self-end">
@@ -69,6 +76,9 @@
                 </div>
             </div>
         </section>
+        <!--  / FINE SECTION -->
+
+        <!-- SECTIONT MY BLOG -->
         <section class="my_blog">
             <div class="container-fluid my_container">   
                 <div class="row justify-content-center align-items-end my_contain-text">
@@ -86,27 +96,36 @@
                 </div>     
             </div>
         </section>
+        <!-- SECTION YOUTUBE CON POSIZIONAMENTO IN ABSOLUTE DELL'IMMAGINE DI SINISTRA E AGGIUNTA DI TESTO A DESTRA-->
         <section class="my_youtube">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-6 position-relative">
-                        <div class="my_fitness-img position-absolute text-center">
-                            <img src="../assets/images/service15-2x.jpg" alt="">
+                <div class="row my_area-right">
+                    <div class="col-6 position-relative my_img-addominali">
+                        <div class="my_fitness-img text-center">
+                            <!-- <img src="../assets/images/service15-2x.jpg" alt=""> -->
                             <div class="col-2 my_contain-right position-absolute">
                                 <a href="#"> <i class="fas fa-play"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 p-5 align-self-center">
                         <h3>Tune up your workouts</h3>
                         <h1>The best health &amp; fitness  advice online</h1>
-                        <div>
-                            <img src="../assets/images/unnamed.jpg" alt="">
+                        <div class="d-flex">
+                            <div>
+                                <img src="../assets/images/unnamed.jpg" alt="img unnamed">
+                            </div>
+                            <div class="my_contain-logo-youtube">
+                                <span>Them fusion</span>
+                                <div class="my_logo-yt d-flex justify-content-around">
+                                    <img class="logo-youtube" src="https://1000marche.net/wp-content/uploads/2020/03/YouTube-logo.png" alt="logo youtube">
+                                    <span class="my_visualizzation align-self-center">999+</span>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <span>Them fusion</span>
-                            <img class="logo-youtube" src="https://cdn.pngsumo.com/youtube-logo-youtube-red-logo-sunny-leone-angle-rectangle-youtube-symbol-png-920_512.png" alt="">
-                        </div>
+                        <p>Arcu eu facilisi ut quisque placerat  nunc habitat. Magna semper mauris, venenatis, leo integer sit  pallentsque.</p>
+                        <button class="btn btn-danger my_bottone"><i class="fas fa-play"></i>Visit my you tube  channel</button>
+                        
                         
                         
                         
@@ -127,6 +146,8 @@ export default {
 
 <style lang="scss">
 @import "../style/variables.scss";
+
+
 
 .my_container-img {
         width: 100px;
@@ -334,6 +355,55 @@ export default {
         border-radius: 50%;
         width: 20px;
     }
+    
 }
 
+.my_area-right {
+    height: 1000px;
+}
+
+.my_img-addominali {
+    background-image: url(../assets/images/service15-2x.jpg);
+    background-position: center;
+    background-size: cover;
+    top: -120px;
+}
+
+.my_contain-logo-youtube {
+        width: 150px;
+
+        .my_logo-yt {
+            border: 1px solid black;
+        }
+
+        .logo-youtube {
+        width: 50%;
+        padding: 0 10px 0;
+        border-right: 1px solid black;
+        }
+
+        .my_visualizzation {
+            font-size: .8rem;
+            padding: 5px;
+        }
+    }
+
+    button {
+        padding: 16px;
+        border-radius: 34px;
+        font-size: 1.2rem;
+        font-weight: bolder;
+        font-family: $secondary-font;
+        
+
+        .fa-play {
+            color: $color-buttom;
+            font-size: .5rem;
+            padding: 5px;
+            margin-right: 10px;
+            background-color: $text-white;
+            border-radius: 5px;
+            width: 25px;
+        }
+    }
 </style>
