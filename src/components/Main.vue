@@ -103,6 +103,13 @@
                         <div>
                             <img src="../assets/images/unnamed.jpg" alt="">
                         </div>
+                        <div>
+                            <span>Them fusion</span>
+                            <img class="logo-youtube" src="https://cdn.pngsumo.com/youtube-logo-youtube-red-logo-sunny-leone-angle-rectangle-youtube-symbol-png-920_512.png" alt="">
+                        </div>
+                        
+                        
+                        
                     </div>
                 </div>
             </div>
@@ -156,6 +163,7 @@ export default {
             .pickgradient{
                 position:relative;
                 display:inline-block;
+                
                 }
 
             .pickgradient:after {
@@ -180,33 +188,10 @@ export default {
                 border-radius: 5px 5px 50px 5px;
                 }
 
-            // .my_card-2 {
-                
-            //     background-position: center;
-            //     background-size: cover; 
-            //     border-radius: 5px 5px 50px 5px;
-            //     filter: brightness(50%);
-            //     height: 500px;
-
-            //     background: rgba(0, 0, 0, .65) url("../assets/images/service6-2x.jpg");
-            //     background-blend-mode: darken;
-
-            // }
-
-            // .my_card-3 {
-                
-            //     background-position: center;
-            //     background-size: cover; 
-            //     border-radius: 5px 5px 50px 5px;
-            //     filter: brightness(50%);
-            //     height: 500px;
-
-            //     background: rgba(0, 0, 0, .65) url("../assets/images/box3-2x.jpg");
-            //     background-blend-mode: darken;
-
-            // }
 
             .my_text-card {
+                z-index: 1;
+
                 h3 {
                     color: $text-white;
                     font-size: 2.2rem;
