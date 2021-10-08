@@ -13,7 +13,7 @@
                             <img class="my_img-zig" src="../assets/images/zigzag.png" alt="immagine zig-zag">
                         </div>
                         <p>Curabitur non nulla sit amet nisl tempus convallis quis ac  lectus dolor sit amet.</p>
-                        <a href="#"><button type="button" class="btn btn-primary me-4"><i class="fas fa-play"></i>Visit my you tube  channel</button></a>
+                        <a href="#"><button type="button" class="my_button-menu me-4"><i class="fas fa-play"></i>Visit my you tube  channel</button></a>
                         <a href="#"><button type="button" class="btn my_btn">Buy Avada today <i class="fas fa-arrow-right"></i></button></a>
                     </div>
                     <div class="col-2 my_contain-right">
@@ -216,7 +216,7 @@ export default {
         left: 0;
         width: 100%;
         height: 100%;
-        background: radial-gradient(40% 50%, rgba(0,0,0,0.3), rgba(255,255,255,0.5));
+        background: linear-gradient(to right, rgba(0,0,0,1), rgba(255,255,255,0.5), rgba(0,0,0,1));
     }
     
 
@@ -301,6 +301,17 @@ export default {
                         }
                     }
 
+                .my_button-menu {
+                    background-color: $color-buttom;
+                    color: $text-white;
+                    border: 1px solid $color-buttom;
+
+                    &:hover {
+                        background-color: $color-red-sienna;
+                        border: 1px solid $color-red-sienna;
+                    }
+                }
+
                 .my_btn {
                     background-color: black;
                     border: 1px solid $paragraph-color;
@@ -308,6 +319,12 @@ export default {
                     padding-right: 35px;
                     padding-left: 35px;
                     font-family: $secondary-font;
+                
+
+                    &:hover {
+                        background-color: $text-white;
+                        color: $background-color-black;
+                    }
 
                 }
                 

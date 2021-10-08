@@ -14,7 +14,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <button type="button" class="btn btn-primary">Schedule a Workout</button>
+                                <button type="button" class="my_button-menu">Schedule a Workout</button>
                             </a>
                         </li>
                         <li>
@@ -121,6 +121,18 @@ export default {
                 border-radius: 34px;
                 font-size: 1.2rem;
                 font-weight: bolder;
+               
+            }
+
+            .my_button-menu {
+                background-color: $color-buttom;
+                color: $text-white;
+                border: 1px solid $color-buttom;
+
+                &:hover {
+                    background-color: $color-red-sienna;
+                    border: 1px solid $color-red-sienna;
+                }
             }
 
             span {
@@ -131,7 +143,7 @@ export default {
         }
 
         .active {
-            color: $color-buttom;
+            color: $text-white;
         }
 
     
