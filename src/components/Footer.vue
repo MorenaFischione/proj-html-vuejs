@@ -2,12 +2,12 @@
   <section class="my_footer">
       <div class="container my_container-footer">
         <div class="row justify-content-around my_contain-footer" >
-          <div class="col-4 align-self-center ">
-            <div class="p-5">
+          <div class="col-4 my_padding">
+            <div>
               <img src="../assets/images/logo-mobile-2x.png" alt="">
             </div>
-            <h3 class="text-center my_text-footer">Ac aliquam neque sagittis diam faucibus vitae  purus turpis phasellum. Pelletsque consectetur  amet purus ultices mauris.</h3>
-            <div class="text-center p-5">
+            <h3 class="text-center my_text-footer pt-5 ">Ac aliquam neque sagittis diam faucibus vitae  purus turpis phasellum. Pelletsque consectetur  amet purus ultices mauris.</h3>
+            <div class="text-center p-4">
               <a href="#"><i class="fab fa-facebook-f pe-3"></i></a>
               <a href="#"><i class="fab fa-twitter pe-3"></i></a>
               <a href="#"><i class="fab fa-youtube pe-3"></i></a>
@@ -15,7 +15,7 @@
               <a href="#"><i class="fab fa-linkedin-in pe-3"></i></a>
             </div>
           </div>
-          <div class="col-4 align-self-center text-center">
+          <div class="col-4 text-center my_padding">
             <h4>Recent Post</h4>
             <ul>
               <li v-for="(link, index) in links" :key="index">
@@ -24,7 +24,7 @@
             </ul>
             
           </div>
-          <div class="col-4 align-self-center text-center">
+          <div class="col-4  text-center my_padding">
             <h4>contacts information</h4>
             <h5> {{ adress }} </h5>
             <h5 class="my_color-text"> {{ mobile }} </h5>
@@ -111,7 +111,7 @@ export default {
 
         li {
             align-self: center;
-            padding: 15px;
+            padding: 12px;
         }
 
         a {
@@ -134,6 +134,10 @@ export default {
 
   h5 {
     color: $primary-color;
+  }
+
+  .my_padding {
+    padding: 100px 0;
   }
 
   .my_copyright {
